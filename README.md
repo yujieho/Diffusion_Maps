@@ -1,4 +1,4 @@
-# diffusion_maps
+# Diffusion_Maps
 
 In this project, I will introduce the diffusion Maps, a non-linear dimensionality reduction method, and show three different ways to construct this technique.
 
