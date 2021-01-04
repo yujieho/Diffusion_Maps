@@ -66,19 +66,35 @@ Results of `Data.mat`:
 
 
 Results of `Data2.mat`:
-![2_DataSpace](Results/2_DataSpace.png)![2_DiffusionSpace](Results/2_DiffusionSpace.png)![2_Clustering](Results/2_Clustering.png)
+<p align='center'>
+    <img src="Results/2_DataSpace.png" alt="2_DataSpace" height="220" />
+    <img src="Results/2_DiffusionSpace.png" alt="2_DiffusionSpace" height="200"/>
+    <img src="Results/2_Clustering.png" alt="2_Clustering" height="220"/>
+</p>
 
 Results of `Data3.mat`:
-![3_DataSpace](Results/3_DataSpace.png)![3_DiffusionSpace](Results/3_DiffusionSpace.png)![3_Clustering](Results/3_Clustering.png)
+<p align='center'>
+    <img src="Results/3_DataSpace.png" alt="3_DataSpace" height="220" />
+    <img src="Results/3_DiffusionSpace.png" alt="3_DiffusionSpace" height="200"/>
+    <img src="Results/3_Clustering.png" alt="3_Clustering" height="220"/>
+</p>
 
 Results of `Data5.mat`:
-![5_DataSpace](Results/5_DataSpace.png)![5_DiffusionSpace](Results/5_DiffusionSpace.png)![5_Clustering](Results/5_Clustering.png)
+<p align='center'>
+    <img src="Results/5_DataSpace.png" alt="5_DataSpace" height="220" />
+    <img src="Results/5_DiffusionSpace.png" alt="5_DiffusionSpace" height="200"/>
+    <img src="Results/5_Clustering.png" alt="5_Clustering" height="220"/>
+</p>
 
 Results of `Data6.mat`:
-![6_DataSpace](Results/6_DataSpace.png)![6_DiffusionSpace](Results/6_DiffusionSpace.png)![6_Clustering](Results/6_Clustering.png)
+<p align='center'>
+    <img src="Results/6_DataSpace.png" alt="6_DataSpace" height="220" />
+    <img src="Results/6_DiffusionSpace.png" alt="6_DiffusionSpace" height="200"/>
+    <img src="Results/6_Clustering.png" alt="6_Clustering" height="220"/>
+</p>
 
 
-To see more results, please go to the `Results` file.
+See more results in the `Results` file.
 
 
 
@@ -89,8 +105,3 @@ This project described the full view of diffusion map, a method of non-linear di
 [1] R.R. Coifman and S. Lafon, Diffusion maps, Applied and computational harmonic analysis, 21(1):5–30, 2006  
 [2] J. de la Porte, B. M. Herbst, W. Hereman and S. J. van der Walt., An Introduction to Diffusion Maps, Proceedings of the Nineteenth Annual Symposium of the Pattern Recognition Association of South Africa, 2008  
 [3] L. Zelnik-Manor and P. Perona, Self-Tuning Spectral Clustering, Advances in Neural Information Processing Systems 17, pp. 1601-1608, 2005, (NIPS’2004)
-
-
-```python
-
-```
