@@ -65,25 +65,26 @@ Ann Lee constructed the diffusion map by using the following steps:
 
 1. ***Construct the affinity matrix K***  
 Define K with entries 
-<img src="https://latex.codecogs.com/png.latex?K_{ij}=\exp(-\frac{d(x_i,x_j)^2}{4\sigma})." />
+<img align="center">src="https://latex.codecogs.com/png.latex?K_{ij}=\exp(-\frac{d(x_i,x_j)^2}{4\sigma})." title="K_{ij}=\exp(-\frac{d(x_i,x_j)^2}{sigma})."</>
+
 
 2. ***Construct the normalize affinity matrix Q***  
 Define Q with entries 
-<img src="https://latex.codecogs.com/gif.latex?\Q_{ij}=\frac{K_{ij}}{\sqrt{\sum_{j=1}^nK_{ij}\sum_{i=1}^nK_{ij}}}. "/>
+<img align="center">src="https://latex.codecogs.com/gif.latex?\Q_{ij}=\frac{K_{ij}}{\sqrt{\sum_{j=1}^nK_{ij}\sum_{i=1}^nK_{ij}}}. "</>
 Note that the multiplication and division are elementwise.
 
 
 3. ***Calculate the first $c$ largest eigenvalues and eigenvectors of the diffusion matrix P***  
 The eigenvalues of $P$ is equal to the eigenvalues of Q.  
 The right and left eigenvectors of P are 
-<img src="https://latex.codecogs.com/png.latex?\psi_j=e_je_1,\quad\phi_j=e_j/e_1" />
+<img align="center">src="https://latex.codecogs.com/png.latex?\psi_j=e_je_1,\quad\phi_j=e_j/e_1" </>
 respectively, where *e_j* is the eigenvector of the corresponding j'th eigenvalue of Q.  
 Note that the multiplication and division are elementwise.
 
 
 4. ***Define a diffusion map Y***  
 Define Y with columns
-<img src="https://latex.codecogs.com/png.latex?Y_j=[\frac{\lambda_j}{1-\lambda_j}\psi_j]." />
+<img align="center">src="https://latex.codecogs.com/png.latex?Y_j=[\frac{\lambda_j}{1-\lambda_j}\psi_j]." </>
 
 
 5. ***Cluster via k-means***  
@@ -103,15 +104,15 @@ I constructed the diffusion map refered to [3]:
 
 1. ***Construct the affinity matrix K***  
 Define K with entries 
-<img src="https://latex.codecogs.com/png.latex?K_{ij}=\exp(-\frac{d(x_i,x_j)^2}{\sigma_i\sigma_j})." />
+<img align="center">src="https://latex.codecogs.com/png.latex?K_{ij}=\exp(-\frac{d(x_i,x_j)^2}{\sigma_i\sigma_j})." </>
 where *sigma_i* is the square of the distance between *x_i* and its *s*'th nearest neighbor.
 
 
 2. ***Construct the normalize affinity matrix Q***  
 Define a *n*n* diagonal matrix D with entries 
-<img src="https://latex.codecogs.com/png.latex?D_{ii}=(\sum_{j=1}^nK_{ij})^{1/2}." />
+<img align="center">src="https://latex.codecogs.com/png.latex?D_{ii}=(\sum_{j=1}^nK_{ij})^{1/2}." </>
 Constructs Q by  
-<img src="https://latex.codecogs.com/png.latex?Q:=D^{-1}KD^{-1}." />
+<img align="center">src="https://latex.codecogs.com/png.latex?Q:=D^{-1}KD^{-1}." </>
 
 
 3. ***Calculate the eigenvectors of Q***  
@@ -119,7 +120,7 @@ Constructs Q by
 
 4. ***Define a diffusion map***  
 Define a diffusion map Y with entries
-<img src="https://latex.codecogs.com/png.latex?Y_{ij}=\frac{Z_{ij}}{\sqrt{\sum_{j=1}^{c}Z_{ij}^2}}," />
+<img align="center">src="https://latex.codecogs.com/png.latex?Y_{ij}=\frac{Z_{ij}}{\sqrt{\sum_{j=1}^{c}Z_{ij}^2}}," </>
 where Z is the unitary matrix having the corresponding eigenvectors as columns.  
 Note that the multiplication and division are elementwise.
 
