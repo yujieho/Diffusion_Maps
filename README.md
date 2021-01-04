@@ -58,7 +58,7 @@ All algorithms mention above can effectively cluster data. I will demonstrate so
 
 
 Results of `Data.mat`:
-<p align='center'>
+<p align='center' valign="center">
     <img src="Results/1_DataSpace.png" alt="1_DataSpace" width="200"/>
     <img src="Results/1_DiffusionSpace.png" alt="1_DiffusionSpace" width="200"/>
     <img src="Results/1_Clustering.png" alt="1_Clustering" width="200"/>
