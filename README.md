@@ -7,7 +7,6 @@ This project reveals the diffusion map and demonstrates 3 different ways to cons
 - [Introduction](#Introduction)
 - [Constructions](#Constructions)
 - [Demonstrations](#Demonstrations)
-- [Conclusion](#Conclusion)
 - [References](#References)
 
 
@@ -97,9 +96,6 @@ Results of `Data6.mat`:
 See more results in the `Results` file.
 
 
-
-## Conclusion
-This project described the full view of diffusion map, a method of non-linear dimensionality reduction. It showed how to use a kernel function to recover the diffusion matrix and distance, and the relationship between diffusion distance and the diffusion map. It showed that in the lower-dimensional space, the structure of data still be preserved and data can be analyzed more easily.
 
 ## References
 [1] R.R. Coifman and S. Lafon, Diffusion maps, Applied and computational harmonic analysis, 21(1):5–30, 2006  
