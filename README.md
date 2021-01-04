@@ -4,24 +4,24 @@
 This project reveals the diffusion map and demonstrates 3 different ways to construct this technique.
 
 ## Contents
-- [Introduction to Diffusion Maps](#Introduction-to-Diffusion-Maps)
+- [Introduction](#Introduction)
 - [Constructions](#Constructions)
 - [Demonstrations](#Demonstrations)
 - [Conclusion](#Conclusion)
 - [References](#References)
 
 
-## Introduction to Diffusion Maps
+## Introduction
 Diffusion maps reduced the dimension of data by finding a lower-dimensional manifold in which points are embedded.
 
-### :question: *Why should we used diffusion maps?*
+### :question: *Why should we use diffusion maps?*
 - allow data in data space to have non-linear shape
 - robust to noise perturbation 
 - computationally inexpensive
 
   
 ### :question: *How should we construct diffusion maps?*
-There are various way to construct the diffusion map, but the following steps are essential for every construction.
+There are various way to construct a diffusion map, but the following steps are essential for every construction.
 
 1. ***Construct the affinity (kernel) matrix K*** 
     - The entry of K is small if two data points are far away from each other in the data space, and is large if opposite.
@@ -44,7 +44,7 @@ There are various way to construct the diffusion map, but the following steps ar
 Here are the brief introductions to three different algorithms of constructing diffusion maps I done.
 
 :pencil2: Construction 1, `DM_AnnLeeMethod.ipynb`, is based on [Ann Lee's Matlab code](https://reurl.cc/E3Ykv). This algorithm is my first sight to diffusion maps, it allows one to increase the time parameter $t$ in the diffusion process.  
-(I found the process is not necessary for my data set to have good results, so I omitted this process in the following constructions.) 
+(I found the process is not necessary for my data set to have good results since they are small, so I omitted this process in the following constructions.) 
 
 :pencil2: Construction 2, `DM_ManorMethod.ipynb`, is based on the paper [3]. This algorithm improves construction 1 by picking a manually selected parameter automatically.
 
@@ -57,14 +57,47 @@ Here are the brief introductions to three different algorithms of constructing d
 All algorithms mention above can effectively cluster data. I will demonstrate some results in this section. 
 
 imageimage
+<div class="row">
+  <div class="column">
+    <img src="Results/1_Clustering.png" alt="Snow" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="Results/1_DataSpace.png" alt="Forest" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="Results/1_Clustering.png" alt="Mountains" style="width:100%">
+  </div>
+</div>
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+<img src="Results/1_Clustering.png" align="center"><img src="Results/1_DataSpace.png" align="center"><img src="Results/1_Clustering.png" align="center">
 
 
 
 
-## Conclusions
+
+
+## Conclusion
 This project described the full view of diffusion map, a method of non-linear dimensionality reduction. It showed how to use a kernel function to recover the diffusion matrix and distance, and the relationship between diffusion distance and the diffusion map. It showed that in the lower-dimensional space, the structure of data still be preserved and data can be analyzed more easily.
 
 ## References
 [1] R.R. Coifman and S. Lafon, Diffusion maps, Applied and computational harmonic analysis, 21(1):5–30, 2006  
 [2] J. de la Porte, B. M. Herbst, W. Hereman and S. J. van der Walt., An Introduction to Diffusion Maps, Proceedings of the Nineteenth Annual Symposium of the Pattern Recognition Association of South Africa, 2008  
 [3] L. Zelnik-Manor and P. Perona, Self-Tuning Spectral Clustering, Advances in Neural Information Processing Systems 17, pp. 1601-1608, 2005, (NIPS’2004)
+
+
+```python
+
+```
