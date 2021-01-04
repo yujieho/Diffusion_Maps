@@ -56,36 +56,24 @@ Here are the brief introductions to three different algorithms of constructing d
 
 All algorithms mention above can effectively cluster data. I will demonstrate some results in this section. 
 
-imageimage
-<div class="row">
-  <div class="column">
-    <img src="Results/1_Clustering.png" alt="Snow" style="width:100%">
-  </div>
-  <div class="column">
-    <img src="Results/1_DataSpace.png" alt="Forest" style="width:100%">
-  </div>
-  <div class="column">
-    <img src="Results/1_Clustering.png" alt="Mountains" style="width:100%">
-  </div>
-</div>
-/* Three image containers (use 25% for four, and 50% for two, etc) */
-.column {
-  float: left;
-  width: 33.33%;
-  padding: 5px;
-}
 
-/* Clear floats after image containers */
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
+Results of `Data.mat`:
+![1_DataSpace](Results/1_DataSpace.png)![1_DiffusionSpace](Results/1_DiffusionSpace.png)![1_Clustering](Results/1_Clustering.png)
 
-<img src="Results/1_Clustering.png" align="center"><img src="Results/1_DataSpace.png" align="center"><img src="Results/1_Clustering.png" align="center">
+Results of `Data2.mat`:
+![2_DataSpace](Results/2_DataSpace.png)![2_DiffusionSpace](Results/2_DiffusionSpace.png)![2_Clustering](Results/2_Clustering.png)
+
+Results of `Data3.mat`:
+![3_DataSpace](Results/3_DataSpace.png)![3_DiffusionSpace](Results/3_DiffusionSpace.png)![3_Clustering](Results/3_Clustering.png)
+
+Results of `Data5.mat`:
+![5_DataSpace](Results/5_DataSpace.png)![5_DiffusionSpace](Results/5_DiffusionSpace.png)![5_Clustering](Results/5_Clustering.png)
+
+Results of `Data6.mat`:
+![6_DataSpace](Results/6_DataSpace.png)![6_DiffusionSpace](Results/6_DiffusionSpace.png)![6_Clustering](Results/6_Clustering.png)
 
 
-
+To see more results, please go to the `Results` file.
 
 
 
