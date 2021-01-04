@@ -59,34 +59,10 @@ All algorithms mention above can effectively cluster data. I will demonstrate so
 
 Results of `Data.mat`:
 <p align='center'>
-    <img src="Results/1_DataSpace.png" alt="1_DataSpace" style="width:33.33%"/>
-    <img src="Results/1_DiffusionSpace.png" alt="1_DiffusionSpace" style="width:33.33%"/>
-    <img src="Results/1_Clustering.png" alt="1_Clustering" style="width:33.33%"/>
+    <img src="Results/1_DataSpace.png" alt="1_DataSpace" style="width:30%"/>
+    <img src="Results/1_DiffusionSpace.png" alt="1_DiffusionSpace" style="width:30%"/>
+    <img src="Results/1_Clustering.png" alt="1_Clustering" style="width:30%"/>
 </p>
-<div class="row">
-  <div class="column">
-    <img src="Results/1_DataSpace.png" alt="1_DataSpace" style="width:33.33%">
-  </div>
-  <div class="column">
-    <img src="Results/1_DiffusionSpace.png" alt="1_DiffusionSpace" style="width:33.33%">
-  </div>
-  <div class="column">
-    <img src="Results/1_Clustering.png" alt="1_Clustering" style="width:33.33%">
-  </div>
-</div>
-<style>
-.column {
-  float: left;
-  width: 33.33%;
-  padding: 5px;
-}
-
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-</style>
 
 Results of `Data2.mat`:
 ![2_DataSpace](Results/2_DataSpace.png)![2_DiffusionSpace](Results/2_DiffusionSpace.png)![2_Clustering](Results/2_Clustering.png)
