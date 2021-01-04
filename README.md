@@ -58,10 +58,18 @@ All algorithms mention above can effectively cluster data. I will demonstrate so
 
 
 Results of `Data.mat`:
+
+| Data in data space | Data in diffusion space | Data after clustering |
+| ------------------ | ----------------------- | --------------------- |
+| <img src="Results/1_DataSpace.png" alt="1_DataSpace"/> | <img src="Results/1_DiffusionSpace.png" alt="1_DiffusionSpace" height="200"/> | <img src="Results/1_Clustering.png" alt="1_Clustering" height="250"/> |
+
+
+
+
 <p align='center'>
-    <img src="Results/1_DataSpace.png" alt="1_DataSpace" height="200" />
+    <img src="Results/1_DataSpace.png" alt="1_DataSpace" height="250" />
     <img src="Results/1_DiffusionSpace.png" alt="1_DiffusionSpace" height="200"/>
-    <img src="Results/1_Clustering.png" alt="1_Clustering" height="200"/>
+    <img src="Results/1_Clustering.png" alt="1_Clustering" height="250"/>
 </p>
 
 
@@ -89,8 +97,3 @@ This project described the full view of diffusion map, a method of non-linear di
 [1] R.R. Coifman and S. Lafon, Diffusion maps, Applied and computational harmonic analysis, 21(1):5–30, 2006  
 [2] J. de la Porte, B. M. Herbst, W. Hereman and S. J. van der Walt., An Introduction to Diffusion Maps, Proceedings of the Nineteenth Annual Symposium of the Pattern Recognition Association of South Africa, 2008  
 [3] L. Zelnik-Manor and P. Perona, Self-Tuning Spectral Clustering, Advances in Neural Information Processing Systems 17, pp. 1601-1608, 2005, (NIPS’2004)
-
-
-```python
-
-```
