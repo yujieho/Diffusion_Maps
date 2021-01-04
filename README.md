@@ -58,20 +58,20 @@ All algorithms mention above can effectively cluster data. I will demonstrate so
 
 
 Results of `Data.mat`:
-<p align='center' valign="center">
-    <img src="Results/1_DataSpace.png" alt="1_DataSpace" width="200"/>
-    <img src="Results/1_DiffusionSpace.png" alt="1_DiffusionSpace" width="200" height="200"/>
-    <img src="Results/1_Clustering.png" alt="1_Clustering" width="200"/>
+<p align='center'>
+    <img src="Results/1_DataSpace.png" alt="1_DataSpace" style="width:33.33%"/>
+    <img src="Results/1_DiffusionSpace.png" alt="1_DiffusionSpace" style="width:33.33%"/>
+    <img src="Results/1_Clustering.png" alt="1_Clustering" style="width:33.33%"/>
 </p>
 <div class="row">
   <div class="column">
-    <img src="Results/1_DataSpace.png" alt="1_DataSpace" style="width:100%">
+    <img src="Results/1_DataSpace.png" alt="1_DataSpace" style="width:33.33%">
   </div>
   <div class="column">
-    <img src="Results/1_DiffusionSpace.png" alt="1_DiffusionSpace" style="width:100%">
+    <img src="Results/1_DiffusionSpace.png" alt="1_DiffusionSpace" style="width:33.33%">
   </div>
   <div class="column">
-    <img src="Results/1_Clustering.png" alt="1_Clustering" style="width:100%">
+    <img src="Results/1_Clustering.png" alt="1_Clustering" style="width:33.33%">
   </div>
 </div>
 <style>
