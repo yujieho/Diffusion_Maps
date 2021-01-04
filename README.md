@@ -22,7 +22,7 @@ Diffusion maps reduced the dimension of points by finding a lower-dimensional ma
   
 ### :question: *How should we construct diffusion maps?*
 
-1. ***Construct the affinity (kernel) matrix                 <img  src="../cgi-bin/mimetex.cgi?f(x)=\int_{-\infty}^xe^{-t^2}dt" >*** 
+1. ***Construct the affinity (kernel) matrix $`K`$*** 
     - The entry of $K$ is small if two data points are far away from each other in the data space, and is large if opposite.
 
 
