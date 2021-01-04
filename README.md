@@ -68,7 +68,11 @@ Results of `Data.mat`:
 
 <p align='center'>
     <img src="Results/1_DataSpace.png" alt="1_DataSpace" height="250" />
+<<<<<<< HEAD
     <img src="Results/1_DiffusionSpace.png" alt="1_DiffusionSpace" height="200"/>
+=======
+    <img src="Results/1_DiffusionSpace.png" alt="1_DiffusionSpace" height="225"/>
+>>>>>>> ce25fb02de498a5900626da7090af897f9c53f9d
     <img src="Results/1_Clustering.png" alt="1_Clustering" height="250"/>
 </p>
 
