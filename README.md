@@ -59,10 +59,27 @@ All algorithms mention above can effectively cluster data. I will demonstrate so
 
 Results of `Data.mat`:
 <p align='center'>
-    <img src="Results/1_DataSpace.png" alt="1_DataSpace" style="width:30%"/>
-    <img src="Results/1_DiffusionSpace.png" alt="1_DiffusionSpace" style="width:30%"/>
-    <img src="Results/1_Clustering.png" alt="1_Clustering" style="width:30%"/>
+    <img src="Results/1_DataSpace.png" alt="1_DataSpace" />
+    <img src="Results/1_DiffusionSpace.png" alt="1_DiffusionSpace" />
+    <img src="Results/1_Clustering.png" alt="1_Clustering" />
 </p>
+
+<div class="verticalhorizontal">
+    <img src="Results/1_DataSpace.png" alt="1_DataSpace" />
+    <img src="Results/1_DiffusionSpace.png" alt="1_DiffusionSpace" />
+    <img src="Results/1_Clustering.png" alt="1_Clustering" />
+</div>
+
+<style>
+.verticalhorizontal {
+    display: table-cell;
+    height: 300px;
+    text-align: center;
+    width: 300px;
+    vertical-align: middle;
+}
+</style>
+
 
 Results of `Data2.mat`:
 ![2_DataSpace](Results/2_DataSpace.png)![2_DiffusionSpace](Results/2_DiffusionSpace.png)![2_Clustering](Results/2_Clustering.png)
