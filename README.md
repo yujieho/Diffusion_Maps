@@ -12,11 +12,9 @@ This project introduces the diffusion map and demonstrates 3 different ways to c
 
 
 ## Introduction
-<br>
+Diffusion maps reveals data structures by finding a lower-dimensional manifold in which points are embedded.
 <p align='center'><img src="Results/intro.png" alt="intro" height="150" /></p>
 <br>
-Diffusion maps reveals data structures by finding a lower-dimensional manifold in which points are embedded.
-
 
 ### :question: *Why should we use diffusion maps?*
 - allow data in data space to have non-linear shape
