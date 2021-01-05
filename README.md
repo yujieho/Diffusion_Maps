@@ -55,11 +55,11 @@ Here are the introductions of three different algorithms I have done.
 - Allows one to increase the time parameter *t* in the diffusion process.  
 (I found the process is not necessary for my data set to have good results since they are small, so I omitted this process in the following constructions.) 
 
-:round_pushpin: Construction 2, `DM_ManorMethod.ipynb`, improved version of construction 1.
+:round_pushpin: Construction 2, `DM_ManorMethod.ipynb`, improves construction 1.
 - Based on the paper [3]. 
-- Improved construction 1 by picking a manually selected parameter automatically.
+- Improves construction 1 by picking a manually selected parameter automatically.
 
-:round_pushpin: Construction 3, `DM.ipynb`, combined knowledges I learned.
+:round_pushpin: Construction 3, `DM.ipynb`, combines knowledges I learned.
 - The diffusion map that constructed in my own way. 
 
 
