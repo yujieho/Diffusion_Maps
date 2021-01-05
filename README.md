@@ -1,4 +1,4 @@
-<h1 align="center">:bulb:<br>Diffusion Maps</h1>
+<h1 align="center">Diffusion Maps</h1>
 <div align="center"><i>A method for analyzing and organizing high dimensional, noisy, and unordered data.</i></div>
 <br>
 
@@ -43,7 +43,7 @@ There are various way to construct a diffusion map, but the following steps are 
 
 
 ## Implementations
-Here are the brief introductions to three different algorithms of constructing diffusion maps I done.
+Here are the introductions of three different algorithms I have done.
 
 :pencil2: Construction 1, `DM_AnnLeeMethod.ipynb`, is based on [Ann Lee's Matlab code](https://reurl.cc/E3Ykv). This algorithm is my first sight to diffusion maps, it allows one to increase the time parameter $t$ in the diffusion process.  
 (I found the process is not necessary for my data set to have good results since they are small, so I omitted this process in the following constructions.) 
@@ -55,7 +55,6 @@ Here are the brief introductions to three different algorithms of constructing d
 
 
 ## Demonstrations
-
 All algorithms mention above can effectively cluster data. I will demonstrate some results in this section. 
 
 
