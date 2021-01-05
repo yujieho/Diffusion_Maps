@@ -57,7 +57,7 @@ Here are the introductions of three different algorithms I have done.
 
 :round_pushpin: Construction 2, `DM_ManorMethod.ipynb`, improved version of construction 1.
 - Based on the paper [3]. 
-- Improved by picking a manually selected parameter automatically.
+- Improved construction 1 by picking a manually selected parameter automatically.
 
 :round_pushpin: Construction 3, `DM.ipynb`, combined knowledges I learned.
 - The diffusion map that constructed in my own way. 
