@@ -1,8 +1,6 @@
 <h1 align="center">Diffusion Maps</h1>
 <div align="center"><i>A method for analyzing and organizing high dimensional, noisy, and unordered data.</i></div>
 <br>
-<p align='center'><img src="Results/intro.png" alt="intro" height="180" /></p>
-<br>
 
 This project introduces the diffusion map and demonstrates 3 different ways to construct this technique.
 
@@ -14,7 +12,11 @@ This project introduces the diffusion map and demonstrates 3 different ways to c
 
 
 ## Introduction
+<br>
+<p align='center'><img src="Results/intro.png" alt="intro" height="150" /></p>
+<br>
 Diffusion maps reveals data structures by finding a lower-dimensional manifold in which points are embedded.
+
 
 ### :question: *Why should we use diffusion maps?*
 - allow data in data space to have non-linear shape
