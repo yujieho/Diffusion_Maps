@@ -1,17 +1,18 @@
 <h1 align="center">Diffusion Maps</h1>
 <div align="center"><i>A method for analyzing and organizing high dimensional, noisy, and unordered data.</i></div>
+<p align='center'><img src="Results/intro.png" alt="intro" height="100" /></p>
 <br>
-This project reveals the diffusion map and demonstrates 3 different ways to construct this technique.
+This project introduces the diffusion map and demonstrates 3 different ways to construct this technique.
 
 ## Contents
 - [Introduction](#Introduction)
-- [Constructions](#Constructions)
+- [Implementations](#Implementations)
 - [Demonstrations](#Demonstrations)
 - [References](#References)
 
 
 ## Introduction
-Diffusion maps reduced the dimension of data by finding a lower-dimensional manifold in which points are embedded.
+Diffusion maps reveals data structures by finding a lower-dimensional manifold in which points are embedded.
 
 ### :question: *Why should we use diffusion maps?*
 - allow data in data space to have non-linear shape
@@ -39,7 +40,7 @@ There are various way to construct a diffusion map, but the following steps are 
 
 
 
-## Constructions
+## Implementations
 Here are the brief introductions to three different algorithms of constructing diffusion maps I done.
 
 :pencil2: Construction 1, `DM_AnnLeeMethod.ipynb`, is based on [Ann Lee's Matlab code](https://reurl.cc/E3Ykv). This algorithm is my first sight to diffusion maps, it allows one to increase the time parameter $t$ in the diffusion process.  
