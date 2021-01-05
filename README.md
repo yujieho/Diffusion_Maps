@@ -52,7 +52,7 @@ Here are the introductions of three different algorithms I have done.
 
 :round_pushpin: Construction 1, `DM_AnnLeeMethod.ipynb`, is my first sight to diffusion maps.  
 - Based on [Ann Lee's Matlab code](https://reurl.cc/E3Ykv).  
-- Allows one to increase the time parameter $t$ in the diffusion process.  
+- Allows one to increase the time parameter *t* in the diffusion process.  
 (I found the process is not necessary for my data set to have good results since they are small, so I omitted this process in the following constructions.) 
 
 :round_pushpin: Construction 2, `DM_ManorMethod.ipynb`, improved version of construction 1.
