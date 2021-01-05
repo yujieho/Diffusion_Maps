@@ -16,13 +16,13 @@ Diffusion maps reveals data structures by finding a lower-dimensional manifold i
 <p align='center'><img src="Results/intro.png" alt="intro" height="150" /></p>
 
 
-### :question: *Why should we use diffusion maps?*
+### :mag: *Why should we use diffusion maps?*
 - allow data in data space to have non-linear shape
 - robust to noise perturbation 
 - computationally inexpensive
 
   
-### :question: *How should we construct diffusion maps?*
+### :mag: *How should we construct diffusion maps?*
 There are various way to construct a diffusion map, but the following steps are essential for every construction.
 
 1. ***Construct the affinity (kernel) matrix K*** 
