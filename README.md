@@ -70,6 +70,7 @@ All algorithms I have done can effectively cluster data.
 I will demonstrate some results in this section. 
 
 
+
 :pencil2: `Data.mat`, number of data: 2000.
 
 <p align='center'>
@@ -116,6 +117,3 @@ See more results in the `Results` file.
 [3] L. Zelnik-Manor and P. Perona, Self-Tuning Spectral Clustering, Advances in Neural Information Processing Systems 17, pp. 1601-1608, 2005, (NIPS’2004)
 
 
-```python
-
-```
