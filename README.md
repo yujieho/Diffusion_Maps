@@ -26,39 +26,52 @@ Diffusion maps reveals data structures by finding a lower-dimensional manifold i
 There are various way to construct a diffusion map, but the following steps are essential for every construction.
 
 1. ***Construct the affinity (kernel) matrix K*** 
-    - The entry of K is small if two data points are far away from each other in the data space, and is large if opposite.
+    - The entry of K is small if two data points are far away in the data space, and is large if opposite.
 
 
 2. ***Construct the diffusion matrix P***
-    - P preserves the connectivity between data points.  
+    - P preserves the connectivity between data.  
     - The entry of P is consider as the probability of jumping from one data point to another in one step of a random walk.
     
-    Note that one can stabilize the random walk by deriving the power of P to *t*, this is called the *diffusion process*. Stabilization is benefit from the increase of the probability of following a path along the underlying geometric structure of the data set. (Since data are dense and highly connected along the geometric structure, and pathways form along short and high probability jumps.)
+    Note that by deriving the power of P to *t*, one can stabilize the random walk.  
+    This is called the *diffusion process*.  
+    Stabilization is benefit from the increase of the probability of following a path along the underlying geometric structure of the data set.  
+    (Since data are dense and highly connected along the geometric structure, and pathways form along short and high probability jumps.)
 
 
 3. ***Construct the diffusion map Y***
-    - Y maps corrdinates of data between kernel space and diffusion space.  
-    - Dimensional reduction is done by neglecting certain dimensions in the diffusion space. This is because the value of eigenvalues indicate the importance of each dimension, and the left eigenvectors of P form a basis of the diffusion space.
+    - Y maps data from data space to diffusion space.  
+    
+    *Dimensional reduction* is done by neglecting certain dimensions in the diffusion space.  
+    This is because eigenvalues indicate the importance of each dimension, and the eigenvectors of P form a basis of the diffusion space.
 
 
 
 ## Implementations
 Here are the introductions of three different algorithms I have done.
 
-:pencil2: Construction 1, `DM_AnnLeeMethod.ipynb`, is based on [Ann Lee's Matlab code](https://reurl.cc/E3Ykv). This algorithm is my first sight to diffusion maps, it allows one to increase the time parameter $t$ in the diffusion process.  
+:round_pushpin: Construction 1, `DM_AnnLeeMethod.ipynb`, is my first sight to diffusion maps.  
+- Based on [Ann Lee's Matlab code](https://reurl.cc/E3Ykv).  
+- Allows one to increase the time parameter $t$ in the diffusion process.  
 (I found the process is not necessary for my data set to have good results since they are small, so I omitted this process in the following constructions.) 
 
-:pencil2: Construction 2, `DM_ManorMethod.ipynb`, is based on the paper [3]. This algorithm improves construction 1 by picking a manually selected parameter automatically.
+:round_pushpin: Construction 2, `DM_ManorMethod.ipynb`, improved version of construction 1.
+- Based on the paper [3]. 
+- Improved by picking a manually selected parameter automatically.
 
-:pencil2: Construction 3, `DM.ipynb`, constructs the diffusion map in my own way. This algorithm combined the knowledge in [1], [2], and [3].
+:round_pushpin: Construction 3, `DM.ipynb`, combined knowledges I learned.
+- The diffusion map that constructed in my own way. 
 
 
 
 ## Demonstrations
-All algorithms mention above can effectively cluster data. I will demonstrate some results in this section. 
+All algorithms I have done can effectively cluster data.  
+
+I will demonstrate some results in this section. 
 
 
-Results of `Data.mat`:
+:pencil2: `Data.mat`, number of data: 2000.
+
 <p align='center'>
     <img src="Results/1_DataSpace.png" alt="1_DataSpace" height="220" />
     <img src="Results/1_DiffusionSpace.png" alt="1_DiffusionSpace" height="200"/>
@@ -66,32 +79,30 @@ Results of `Data.mat`:
 </p>
 
 
-Results of `Data2.mat`:
+:pencil2: `Data2.mat`, number of data: 299.
+
 <p align='center'>
     <img src="Results/2_DataSpace.png" alt="2_DataSpace" height="220" />
     <img src="Results/2_DiffusionSpace.png" alt="2_DiffusionSpace" height="200"/>
     <img src="Results/2_Clustering.png" alt="2_Clustering" height="220"/>
 </p>
 
-Results of `Data3.mat`:
+
+:pencil2: `Data3.mat`, number of data: 303.
+
 <p align='center'>
     <img src="Results/3_DataSpace.png" alt="3_DataSpace" height="220" />
     <img src="Results/3_DiffusionSpace.png" alt="3_DiffusionSpace" height="200"/>
     <img src="Results/3_Clustering.png" alt="3_Clustering" height="220"/>
 </p>
 
-Results of `Data5.mat`:
+
+:pencil2: `Data5.mat`, number of data: 622.
+
 <p align='center'>
     <img src="Results/5_DataSpace.png" alt="5_DataSpace" height="220" />
     <img src="Results/5_DiffusionSpace.png" alt="5_DiffusionSpace" height="200"/>
     <img src="Results/5_Clustering.png" alt="5_Clustering" height="220"/>
-</p>
-
-Results of `Data6.mat`:
-<p align='center'>
-    <img src="Results/6_DataSpace.png" alt="6_DataSpace" height="220" />
-    <img src="Results/6_DiffusionSpace.png" alt="6_DiffusionSpace" height="200"/>
-    <img src="Results/6_Clustering.png" alt="6_Clustering" height="220"/>
 </p>
 
 
