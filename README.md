@@ -1,7 +1,9 @@
 <h1 align="center">Diffusion Maps</h1>
 <div align="center"><i>A method for analyzing and organizing high dimensional, noisy, and unordered data.</i></div>
-<p align='center'><img src="Results/intro.png" alt="intro" height="100" /></p>
 <br>
+<p align='center'><img src="Results/intro.png" alt="intro" height="180" /></p>
+<br>
+
 This project introduces the diffusion map and demonstrates 3 different ways to construct this technique.
 
 ## Contents
@@ -102,3 +104,8 @@ See more results in the `Results` file.
 [1] R.R. Coifman and S. Lafon, Diffusion maps, Applied and computational harmonic analysis, 21(1):5–30, 2006  
 [2] J. de la Porte, B. M. Herbst, W. Hereman and S. J. van der Walt., An Introduction to Diffusion Maps, Proceedings of the Nineteenth Annual Symposium of the Pattern Recognition Association of South Africa, 2008  
 [3] L. Zelnik-Manor and P. Perona, Self-Tuning Spectral Clustering, Advances in Neural Information Processing Systems 17, pp. 1601-1608, 2005, (NIPS’2004)
+
+
+```python
+
+```
