@@ -30,13 +30,14 @@ Diffusion maps reveals data structures by finding a lower-dimensional manifold i
 - The entry of P is consider as the probability of jumping from one data point to another in one step of a random walk.  
 
 ***Diffusion map Y***
-- By using eigenvectors and eigenvalues of P, Y maps data from data space to a lower-dimensional diffusion space.  
-- Data that are close to each other in the data space will gather in the diffusion space, forming clusters.  
-- *Dimensional reduction* is done by neglecting certain eigenvalues, since its value indivates the importance of its corresponding eigenvectors.  
+- By using certain eigenvectors and eigenvalues of P, Y maps data from data space to a lower-dimensional diffusion space.  
+- Data that are related in the data space will gather in the diffusion space, forming clusters.  
+- *Dimension reduction*: Neglecting certain eigenvalues and their eigenvectors.  
+    (Since the eigenvalue indivates the importance of its eigenvectors.)  
 
 ***Diffusion process***
 - This process stabilize the random walk by deriving the power of P to *t*.
-- Stabilization is benefit from the increase of the probability of following a path along the underlying geometric structure of the data set.  
+- *Stabilization*: Benefit from the increase of the probability of following a path along the underlying geometric structure of the data set.  
     (Since data are dense and highly connected along the geometric structure, and pathways form along short and high probability jumps.)
 
 
