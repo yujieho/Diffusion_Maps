@@ -22,33 +22,27 @@ Diffusion maps reveals data structures by finding a lower-dimensional manifold i
 - computationally inexpensive
 
   
-### :mag: *How should we construct diffusion maps?*
-There are various way to construct a diffusion map, but the following steps are essential for every construction.
-
-1. ***Construct the affinity (kernel) matrix K*** 
-    - The entry of K is small if two data points are far away in the data space, and is large if opposite.
+### :mag: *How diffusion maps work?*
 
 
-2. ***Construct the diffusion matrix P***
-    - P preserves the connectivity between data.  
-    - The entry of P is consider as the probability of jumping from one data point to another in one step of a random walk.
-    
-    Note that by deriving the power of P to *t*, one can stabilize the random walk.  
-    This is called the *diffusion process*.  
-    Stabilization is benefit from the increase of the probability of following a path along the underlying geometric structure of the data set.  
+***Diffusion matrix P***
+- By using the kernel matrix, P preserves the connectivity between data.  
+- The entry of P is consider as the probability of jumping from one data point to another in one step of a random walk.  
+
+***Diffusion map Y***
+- By using eigenvectors and eigenvalues of P, Y maps data from data space to a lower-dimensional diffusion space.  
+- Data that are close to each other in the data space will gather in the diffusion space, forming clusters.  
+- *Dimensional reduction* is done by neglecting certain eigenvalues, since its value indivates the importance of its corresponding eigenvectors.  
+
+***Diffusion process***
+- This process stabilize the random walk by deriving the power of P to *t*.
+- Stabilization is benefit from the increase of the probability of following a path along the underlying geometric structure of the data set.  
     (Since data are dense and highly connected along the geometric structure, and pathways form along short and high probability jumps.)
-
-
-3. ***Construct the diffusion map Y***
-    - Y maps data from data space to diffusion space.  
-    
-    *Dimensional reduction* is done by neglecting certain dimensions in the diffusion space.  
-    This is because eigenvalues indicate the importance of each dimension, and the eigenvectors of P form a basis of the diffusion space.
 
 
 
 ## Implementations
-Here are the introductions of three different algorithms I have done.
+There are various way to construct a diffusion map, here are the introductions of three different algorithms I have done.
 
 :round_pushpin: Construction 1, `DM_AnnLeeMethod.ipynb`, is my first sight to diffusion maps.  
 - Based on [Ann Lee's Matlab code](https://reurl.cc/E3Ykv).  
