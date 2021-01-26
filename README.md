@@ -37,7 +37,7 @@ Diffusion maps reveals data structures by finding a lower-dimensional manifold i
 
 ***Diffusion process***
 - This process stabilize the random walk by deriving the power of P to *t*.
-- *Stabilization*: Benefit from the increase of the probability of following a path along the underlying geometric structure of the data set.  
+- *Stabilization*: Increasing *t* increases the probability of following a path along the underlying geometric structure of data.  
     (Since data are dense and highly connected along the geometric structure, and pathways form along short and high probability jumps.)
 
 
